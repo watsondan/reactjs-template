@@ -1,30 +1,31 @@
 # reactjs-template
 
-clone git repo to dir
+###### 1. Clone git repo to dir:
 ```
 git clone https://github.com/watsondan/reactjs-template.git
 ```
 
-navigate into directory:
+###### 2. Navigate into directory:
 ```
 cd reactjs-template
 ```
 
-initialize with node:
+###### 3. Initialize with node:
 ```
 npm init
 ```
 
-install required moduals:
+###### 4. Install required moduals:
 ```
 npm install --save-dev react react-dom webpack babel-loader babel-core babel-preset-es2015 babel-preset-react webpack-dev-server
 ```
-make source and distrobution directories:
+
+###### 5. Make source and distrobution directories:
 ```
 mkdir src dist
 ```
 
-make app.js and index.html files:
+###### 6. Make app.js and index.html files:
 ```
 touch src/app.js dist/index.html
 ```
@@ -55,7 +56,7 @@ const app = document.getElementById('app')
 ReactDOM.render(<Main />, app)
 ```
 
-make the webpack:
+###### 7. Make the webpack:
 ```
 touch webpack.config.js
 ```
@@ -83,7 +84,7 @@ const config = {
 module.exports = config
 ```
 
-make .babelrc file:
+###### 8. Make .babelrc file:
 ```
 touch .babelrc
 ```
@@ -96,7 +97,8 @@ touch .babelrc
   ]
 }
 ```
-The last step is to add the webpack command to our package.json. Find the scripts object and add another key-value pair under the existing test key.
+
+###### 9. The last step is to add the webpack command to our package.json. Find the scripts object and add another key-value pair under the existing test key.
 ```
 "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
@@ -104,12 +106,13 @@ The last step is to add the webpack command to our package.json. Find the script
   "watch": "webpack-dev-server --content-base dist"
 }
 ```
-Run watch server:
+
+###### Run watch server:
 ```
 npm run watch
 ```
 
-build application:
+###### Build application:
 ```
 npm run build
 ```
