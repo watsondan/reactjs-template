@@ -98,7 +98,7 @@ touch .babelrc
 }
 ```
 
-###### 9. The last step is to add the webpack command to our package.json. Find the scripts object and add another key-value pair under the existing test key.
+###### 9. The last step is to add the webpack command and run the server command to our package.json. Find the scripts object and add another key-value pair under the existing test key. 
 ```
 "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
