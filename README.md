@@ -17,7 +17,7 @@ npm init
 
 ###### 4. Install required moduals:
 ```
-npm install --save-dev react react-dom webpack babel-loader babel-core babel-preset-es2015 babel-preset-react webpack-dev-server
+npm install --save-dev react react-dom webpack babel-loader babel-core babel-preset-es2015 babel-preset-react webpack-dev-server style-loader css-loader
 ```
 
 ###### 5. Make source and distrobution directories:

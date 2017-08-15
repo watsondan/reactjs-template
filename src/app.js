@@ -1,15 +1,17 @@
 // app.js
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+//import styles from './app.css';
+// require("./app.css")
+import './app.css';
+import LandingPage from './layouts/LandingPage/LandingPage';
 
 class Main extends React.Component {
     render() {
         return (
-            <div>
-                <h1>Hello World</h1>
-            </div>
-        )
+            <LandingPage />
+        );
     }
 }
 
