@@ -1,0 +1,35 @@
+{
+  "name": "reactjs-template",
+  "version": "1.0.0",
+  "description": "A template for creating a react project.",
+  "main": "index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack",
+      "watch": "webpack-dev-server --content-base dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watsondan/reactjs-template.git"
+  },
+  "keywords": [
+    "template",
+    "reactjs"
+  ],
+  "author": "waniel datson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watsondan/reactjs-template/issues"
+  },
+  "homepage": "https://github.com/watsondan/reactjs-template#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
