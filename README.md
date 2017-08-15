@@ -32,8 +32,8 @@ touch src/app.js dist/index.html
 ```
 // app.js
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 class Main extends React.Component {
     render() {
@@ -41,12 +41,12 @@ class Main extends React.Component {
             <div>
                 <h1>Hello World</h1>
             </div>
-        )
+        );
     }
 }
 
-const app = document.getElementById('app')
-ReactDOM.render(<Main />, app)
+const app = document.getElementById('app');
+ReactDOM.render(<Main />, app);
 ```
 ```
 <!--index.html-->
@@ -63,7 +63,7 @@ touch webpack.config.js
 ```
 //webpack.config.js
 
-const path = require('path')
+const path = require('path');
 
 const config = {
     entry: './src/app.js',
@@ -72,16 +72,21 @@ const config = {
         filename: 'bundle.js'
     },
     module: {
-        rules: [{
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
             }
         ]
     }
-}
+};
 
-module.exports = config
+module.exports = config;
 ```
 
 ###### 8. Make .babelrc file:
